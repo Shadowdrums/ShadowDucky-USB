@@ -21,7 +21,7 @@ def get_key():
       else:
         key = int(key)
     except:
-      print("Access Dendied Inavlid Key")
+      print("Access Denied Inavlid Key")
       
 get_key()
 print("Access Granted..Welcome")
