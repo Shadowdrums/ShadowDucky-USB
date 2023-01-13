@@ -1,12 +1,6 @@
 # Shadow Ducky USB Terminal
 # This will be the terminal to activate and run the programs on the shadow ducky USB
-# have a picture
-# have a help terminal 
-# be able to activate 2 programs
 # password(key) activated
-#
-#
-#
 
 print("You must sign in to use ShadowDucky\n")
 
