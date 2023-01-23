@@ -1,4 +1,8 @@
 # ShadowDucky-USB
+
+![ShadowDucky](https://user-images.githubusercontent.com/122622018/214044473-d0ce4b61-d29f-4951-b54e-67dd459dee8a.png)
+
+
 This is a home made "Rubber Ducky". it gives the user a reverse shell and can grab information for Windows to Windows Application
 
 NOTE: most of the file paths in the files start with "D:\" this is because its application is from a USB. aswell as the folder "ShadowDuckyV1.2A" folder is not needed the proper format for the flashdrive is how its set up inside that folder.
